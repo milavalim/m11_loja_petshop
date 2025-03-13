@@ -30,7 +30,7 @@ $(document).ready(function(){
         listaCarrinho.append(novoProduto);
 
         valorTotal += vlProduto;
-        total.html(`<strong>Total: R$${totalValor.toFixed(2).replace(".", ",")}</strong>`);
+        total.html(`<strong>Total: R$${valorTotal.toFixed(2).replace(".", ",")}</strong>`);
     });
 
     buttonComprar.click(function(){
