@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="container container-flex">
+            <h1 style="font-size: 2.5em;">Petshop</h1>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="#sobre">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#produtos">Produtos</a>
+                    </li>
+                    <li>
+                        <a href="#carrinho">
+                            <img src="./images/carrinho.png" alt="Seu carrinho">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="carousel-images">
+        <img src="./images/carrossel1.jpg" alt="gato brincando">
+        <img src="./images/carrossel2.jpg" alt="cachorro filhote">
+        <img src="./images/carrossel3.jpg" alt="ração de cachorro no pote">
+        <img src="./images/carrossel4.jpg" alt="coelhos">
+        <img src="./images/carrossel5.jpg" alt="calopsitas dormindo">
+    </div>
+    <section id="sobre" class="container">
+        <div class="container">
+            <img src="./images/fachada_loja.jpg">
+        </div>
+        <div class="container">
+            <h2>Sobre nós</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum facere voluptatem voluptas obcaecati velit optio. Corrupti nulla minima accusamus tempore dignissimos dolorum magni explicabo dolore enim, veritatis voluptatum voluptatem at.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repellendus consectetur atque fuga molestiae delectus nemo similique ipsa ad et? Mollitia ad nisi, quam numquam amet id modi quis inventore.</p>
+        </div>
+    </section>
+    <section id="produtos">
+        <div class="container">
+            <h2>Produtos</h2>
+            <ul class="lista-produtos">
+                <li class="card">
+                    <img src="./images/petisco_cao.jpg" alt="petisco de cachorro">
+                    <h3>Petisco xpto</h3>
+                    <p>Descrição assim assado para tal animal.</p>
+                    <span><b>R$30,00</b></span>
+                    <button type="button">Adquirir</button>
+                </li>
+                <li class="card">
+                    <img src="./images/petisco_gato.jpg" alt="petisco para gato">
+                    <h3>Petisco xpto</h3>
+                    <p>Descrição assim assado para tal animal.</p>
+                    <span><b>R$30,00</b></span>
+                    <button type="button">Adquirir</button>
+                </li>
+                <li class="card">
+                    <img src="./images/petisco_coelho.jpeg" alt="petisco para coelho">
+                    <h3>Petisco xpto</h3>
+                    <p>Descrição assim assado para tal animal.</p>
+                    <span><b>R$30,00</b></span>
+                    <button type="button">Adquirir</button>
+                </li>
+                <li class="card">
+                    <img src="./images/petisco_passaro.jpg" alt="petisco para passaro">
+                    <h3>Petisco xpto</h3>
+                    <p>Descrição assim assado para tal animal.</p>
+                    <span><b>R$30,00</b></span>
+                    <button type="button">Adquirir</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="carrinho">
+        <div class="container">
+            <h2>Seu carrinho</h2>
+            <div class="card">
+                <ul></ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>2025 Petshop &copy Todos os direitos reservados</p>
+            <ul>
+                <li>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="./images/instagram.png" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="./images/facebook.png" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtube.com" target="_blank">
+                        <img src="./images/youtube.png" alt="Youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./main.js"></script>
+</html>

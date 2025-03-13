@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html{
+    overflow-x: hidden; /*tirando a barra de rolagem horizontal*/
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1, h2{
+    font-family: "Cherry Bomb One", system-ui, serif;
+    font-weight: normal;
+}
+
+header,
+footer {
+    background-color: #4f2fc0;
+    padding: 16px 0;
+    color: #fff;
+}
+
+header{
+    position: sticky; /*aplicando regra para que o cabeçalho fique no topo da pg*/
+    top: 0; /*explicando aonde o cabeçalho tem que "grudar"*/
+    left: 0;
+    z-index: 1; /*define o cabeçalho como a prioridade em aparecer na frente*/
+}
+
+header > .container,
+footer > .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav li{
+    list-style: none;
+    display: inline;
+    margin-right: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+nav li img{
+    max-width: 1.2em;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    margin: 24px;
+}
+
+#sobre img{
+    max-height: 20em;
+    margin-right: 2em;
+    margin-top: 2em;
+    border-radius: 10px;
+}
+
+section h2{
+    margin-bottom: 1em;
+}
+
+#produtos ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* Espaço entre os cards */
+    padding: 0;
+    list-style: none;
+}
+
+.card {
+    background: #fff;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 16px 0;
+    font-size: 1.2rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.card span {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #4f2fc0;
+}
+
+.card button{
+    padding: 0.5em;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #4f2fc0;
+    font-weight: bold;
+    font-size: 1em;
+    background-color:  #fff;
+    color: #4f2fc0;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+.card button:hover{
+    background-color: #ffcc00;
+    border: 1px transparent;
+}
+
+#carrinho {
+    display: none;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 50%;
+    margin: 1em auto;
+}
+
+#carrinho .card ul {
+    padding: 0;
+    list-style: none;
+}
+
+#carrinho .card ul li {
+    border-bottom: 1px solid #ffcc00;
+    padding: 10px 0;
+    text-align: left;
+}
+
+#carrinho .card ul li h3 {
+    margin: 0;
+    font-size: 1em;
+}
+
+#carrinho .card ul li span {
+    display: block;
+    font-size: 0.8em;
+    color: #000;
+}
+
+#carrinho .card p{
+    margin: 1em 0;
+    color: #4f2fc0;
+    text-align: left;
+}
+
+footer ul li{
+    display: inline;
+    list-style: none;
+    margin-right: 1rem;
+    justify-content: center;
+}
+
+footer img{
+    max-width: 2em;
+}
+
+footer p{
+    font-size: 0.8em;
+}
