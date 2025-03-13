@@ -23,7 +23,7 @@ h1, h2{
 header,
 footer {
     background-color: #4f2fc0;
-    padding: 16px 0;
+    padding: 16px;
     color: #fff;
 }
 
@@ -188,4 +188,62 @@ footer img{
 
 footer p{
     font-size: 0.8em;
+}
+
+@media (max-width: 1023px) { /*tablet*/
+    #produtos ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    #sobre p{
+        margin-right: 1em;
+    }
+    
+    #sobre img {
+        max-height: 20em;
+        margin-left: 1em;
+    }
+
+    .card img{
+        max-width: 13em;
+    }
+}
+
+@media (max-width: 767px) { /*mobile*/
+    header .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; 
+    }
+    
+    nav {
+        margin-top: 1em;
+    }
+    
+    nav ul {
+        padding: 0;
+    }
+    
+    nav li {
+        display: inline;
+        margin: 0.5em;
+    }
+    
+    #produtos ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #sobre {
+        flex-direction: column;
+        /* text-align: center; */
+    }
+    
+    #sobre img {
+        margin: 0 0 1em 0;
+    }
+
+    .adquirir{
+        max-width: 10em;
+    }
 }
