@@ -1,9 +1,23 @@
 $(document).ready(function(){
     $('#carousel-images').slick({
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1024, //tablets
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 767, //mobile
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
     const listaCarrinho= $('#carrinho .card ul');
